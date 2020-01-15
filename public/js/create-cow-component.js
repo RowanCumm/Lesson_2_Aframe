@@ -26,6 +26,7 @@ AFRAME.registerComponent( 'create-cow-component',{
         cowElem.setAttribute('class','clickable');
         cowElem.setAttribute('obj-model', 'obj:/assets/models/Cow.obj');
         cowElem.setAttribute('material', 'src:assets/textures/Cow.png');
+        cowElem.setAttribute('delete-cow-component', '');
 
         cowElem.setAttribute('position', { x:(Math.random() * 6.0) -3.0, y:0, z:-4.0 -(Math.random() * 3.0)});
         const randScale = 0.2 + (Math.random() * 8.0);
