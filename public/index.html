@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="helmet_model" response-type="arraybuffer" src="assets\models\DamagedHelmet.glb" ></a-asset-item>"
+        </a-assets>
+      
+      <a-sky color="#ECECEC"></a-sky>
+      <a-entity id="plane"
+                position="0 0 0"
+                rotation="-90 0 0"
+                scale="1 1 1"
+                geometry="primitive:plane; width:10.0; height:10.0;"
+                material="color:rgb(0, 255, 0);">
+            </a-entity>
+      <a-entity id="cylinder"
+            geometry="primitive:cylinder; radius:5.0; height:0.1;"
+            material="color:rgb(0, 255, 0);">
+      </a-entity>
+
+      <a-entity id="helmet"
+      position="0 0 -4" 
+      scale="1 1 1"
+      gltf-model="#helmet_model"></a-entity>
+    </a-scene>
+  </body>
+</html>
